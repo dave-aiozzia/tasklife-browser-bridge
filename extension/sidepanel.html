@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tasklife Browser Bridge</title>
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tasklife Browser Bridge</h1>
+      <p>Connect this browser to an approved agent backend.</p>
+    </header>
+
+    <section class="card">
+      <label for="serverUrl">Hermes/OpenClaw server URL</label>
+      <input id="serverUrl" placeholder="https://hermes.example.com" />
+      <button id="saveSettings">Save</button>
+      <div id="settingsStatus" class="muted"></div>
+    </section>
+
+    <section class="card">
+      <h2>Current page</h2>
+      <button id="snapshot">Get page snapshot</button>
+      <button id="forms">List forms</button>
+      <pre id="output"></pre>
+    </section>
+
+    <section class="card chat">
+      <h2>Agent chat</h2>
+      <div id="messages"></div>
+      <textarea id="prompt" placeholder="Ask Hermes to help with this page..."></textarea>
+      <button id="send">Send</button>
+      <p class="muted">MVP stub: chat transport will connect to the backend gateway next.</p>
+    </section>
+
+    <script src="sidepanel.js" type="module"></script>
+  </body>
+</html>

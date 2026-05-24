@@ -1,0 +1,19 @@
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Node/build artifacts
+node_modules/
+dist/
+build/
+*.log
+
+# Local secrets/settings
+.env
+.env.*
+!.env.example
+
+# Chrome extension packaging
+*.crx
+*.pem
